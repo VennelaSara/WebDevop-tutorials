@@ -1,0 +1,292 @@
+/* h1{
+    color:red;
+}
+p{
+    color:green;
+}
+button{
+    background-color: green;
+    color:brown;
+}
+body{
+    background-color: black;
+} */
+/* #box{
+    background-color: blue;
+} */
+/* .heading{
+    color:red;
+/* } */
+/* h1,h2,h3{
+    color:red;
+} */ 
+/* button{
+    background-color: green;
+} */
+/* .a{
+    text-align:center;
+} */
+/* *{
+    font-family:'Times New Roman';
+}
+h1{
+    text-align:center;
+    text-transform:capitalize;
+}
+#outer{
+    font-size:25px;
+
+}
+#inner{
+    font-size:10px;
+} */
+/* h1{
+    height:200px;
+    width:200px;
+    background-color: pink;
+    border-width:2px;
+    border-style:solid;
+
+} */
+/* div{
+    width:100px;
+    height:100px;
+    border:2px solid brown;
+    padding:1px 2px 3px 4px;
+    margin:100px 100px 100px 100px;
+    background-color: pink;
+} */
+/* .traffic{
+    width:150px;
+    height:350px;
+    background-color: black;
+    padding:25px;
+}
+.light{
+    margin:25px;
+}
+
+#div1{
+    background-color: red;
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+   
+}
+#div2{
+    background-color: yellow;
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+}
+#div3{
+    background-color: green;
+    border-radius: 50%;
+    width:100px;
+    height:100px;
+} */
+/* *{
+    padding:0;
+    margin:0;
+    color:white;
+}
+#nav{
+    background-color: black;
+    height:60px;
+}
+button{
+    color:white;
+    background-color: #f08804;
+}
+#logo{
+    color:#f08804;
+    font-size:25px;
+}
+a{
+    margin-right: 200px;
+    text-decoration:none;
+}
+.contentBox{
+    height:100px;
+    width:100px;
+    border:2px solid black;
+    display:inline-block;
+}
+#content{
+    height:750px;
+}
+footer{
+    background-color: black;
+    color:white;
+    text-align:center;
+} */
+
+/* #box1{
+height:100px;
+width:100px;
+background-color: green;
+}
+#box2{
+    height:50px;
+    width:30%;
+    background-color: yellow;
+    margin-left: 10%;
+} */
+/* #container{
+    width:800px;
+    height:200px;
+    display:flex;
+
+}
+#box1{
+    background-color:aqua;
+}
+#box2{
+    background-color: pink;
+}
+#box3{
+    background-color: darkkhaki;
+}
+#box4{
+    background-color: indianred;
+} */
+
+/* div{
+    background-color: pink;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+
+}
+a{
+    text-decoration: none;
+    color:red;
+}
+li{
+    list-style-type: none;
+    display:inline;
+}
+@media(width:600px)
+{
+    div{
+        background-color: red;
+    }
+}
+@media(min-width:600px){
+    div{
+        background-color: green;
+    }
+
+}
+media for different devices differnt sizes our website should be clear,min,max,and for range. */
+/* div{
+    height: 200px;
+    width: 200px;
+    background-color: chocolate;
+}
+@media(max-width:300px){
+    div{
+background-color: green;
+    }
+}
+@media(min-width:300px) and (max-width:400px){
+    div{
+background-color: pink;
+    }
+}
+@media(min-width:400px) and (max-width:600px){
+    div{
+  background-color: red;  
+    }
+}
+@media(min-width:600px){
+    div{
+  background-color: blue;
+    } 
+  }  */
+
+/* Advance CSS Concepts */
+/* Transitions,Rotations,etc.,. */
+/* Transition - Enable us to define the transition between two states of an Element,button - when clicked - active,hover-changes in elements */
+/* Element from one state to another that change can be controlled by transitions. */
+/* Pseudo class - define different states. */
+/* active - click and hold state */
+/* div{
+    height: 100px;
+    width:100px;
+    background-color: aquamarine;
+}
+div:hover{
+    background-color: blue;
+}
+div:active{
+background-color: pinl;
+} */
+/* transition-property - slow/fast/delay
+transition-duration - When hovered/clicked/... how much time it should take to complete those changes.,transition-timing-function(ease-in,ease-out,linear,steps)
+tells how transition happening ,transition-delay-after how much delay tarnsition apply*/
+/* transition shorthand - all or (propertyname,duration,timing-function,delay) */
+
+/* CSS Transform(things to make them big/small/rotate) - Used to apply 2D & 3D transformations to an Element(Box & Content).Rotate(degrees(mostly used/radians to rotate) */
+/* transform: x rotate(90deg); - visibility not there
+Can rotate along a particular axis(X,Y,Z)
+scale(to make big/small)
+transform:scale x(2)
+Translate - Center to change
+transform:translatex(50px) (Can apply many effects with transition like moving,scaling,dropping)
+Skew - mixture(Twist)
+transform:skew(90deg)
+
+Animation
+To animate CSS Elements
+The below is a template to apply Animation(telling frames)
+@keyframe myName{
+    from{font-size:20px;}  //eg starting font-size - 20px
+    to{font-size:40px;}  //After animation font-size becomes - 40px
+}
+@keyframe colorAnimate{
+    from{
+        left:0px;
+        background-color:aquamarine;
+    }
+    to{
+        left:200px;
+        background-color:red;
+    }
+
+    Animation Properties
+    animation-name
+    animation-duration
+    animation-timing-function
+    animation-delay
+    animation-iteration-count(how many times)
+    animation-direction(normal,reverse,alternate(reverse direction in each cycle),alternate-re(reverse+alternate))
+Animation shorthand
+animation:myName duration timing-fx iteration-count direction
+
+% in Animation
+from(0%)
+to(100%)
+in between(50%)-another change.
+*/
+/* Can have border-top,bottom,left,right */
+.loader{
+    width: 200px;
+    height:200px;
+    border-radius:50%;
+    border:20px solid #FFE66D;
+    border-top:20px solid #4ECDC4;
+    animation:spinAnimate 1s ease-in-out 0s infinte normal;
+}
+@keyframes spinAnimate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+
+
+

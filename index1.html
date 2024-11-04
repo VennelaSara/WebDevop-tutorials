@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Level1</title>
+    <link rel="stylesheet" href="index1.css">
+<!-- <style>
+h1{
+    color:red;
+}
+</style> -->
+<style>
+    button{
+        color:blue;
+    }
+</style>
+</head>
+<!--styling types : inline(priority1) ,style tag(Priority2), external css file(Priority3)(Use this mostly to avoid Confusion.)-->
+<!--layout - foreground(see front - text,buttons,link,etc) and background(see background)-->
+<!--Text by default black color,background by default white..-->
+<!--Color - To set the foreground , background-color - To set Background color-->
+<!--Color systems 2 systems(rgb(red,green,blue in between (0-255) range),hex(sets rgb values(00(0),ff(255)) with less typing hexadecimal system #ff0000-#00ff00).)-->
+<!--Google color picker to know color rgb values,color pallette - coolers.-->
+<!--Selectors - Universal(* - style to total document),Element(h1),class(.),Id(#)-->
+<!--If we change property after then that style is applied more priority.-->
+<!--Id - Unique names. can give same id to many elements but not good practice so can give same class name to multipe elements.-->
+<!--text properties - text align(left,right,center)-->
+<body>
+    <!--Emmet is a feature in VS code that adds large codes by short cuts.-->
+    <!-- <h1>From Apna College!</h1>
+    <h1 style="color:green;">Hello from Apna college</h1>
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph</p>
+    <button>Click here</button> -->
+    <!-- <div id="box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure debitis quis distinctio beatae necessitatibus cumque pariatur nemo, est voluptatibus. Fuga aliquid laboriosam facilis blanditiis delectus tempore suscipit libero, culpa ad?</p>
+    </div>
+    <h1 class="heading">Heading1</h1>
+    <h2 class="heading">Heading2</h2>
+    <h3 class="heading">Heading3</h3>
+    <button style="color:pink">Click me</button>
+    <p class="a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis accusantium ducimus vel culpa doloribus ipsum, dicta voluptatibus deserunt distinctio dignissimos reiciendis quo ratione eos quod ut quam id velit sint!
+    Modi aut numquam, odio rem temporibus molestias in error. Non optio ad, voluptas maxime, dolorum vero dignissimos minima, laudantium maiores repellat excepturi soluta consectetur asperiores possimus enim! Earum, cupiditate soluta?
+    Voluptatum distinctio modi similique? Facere iusto laborum amet praesentium omnis magnam libero nemo obcaecati placeat quos autem dolorem commodi eos ab quis ea adipisci aliquam eveniet, laudantium cumque? Accusantium, animi.
+    Sequi esse accusantium amet ipsum et modi impedit. Commodi eligendi optio nostrum maiores harum dolorum exercitationem alias, ratione ullam culpa molestiae sequi aliquam magni nulla id dignissimos similique numquam omnis.
+    Molestiae ex totam maiores explicabo, minima recusandae facilis distinctio architecto rem beatae ea porro possimus! Ea dolores, at architecto et facilis fugiat pariatur fuga reprehenderit neque corporis eos, unde quia!
+    Ex est sapiente, labore ut, dicta eveniet officiis repellat debitis reiciendis qui atque, dolorum aperiam! Magnam voluptatibus itaque fuga, corrupti ea illum dicta reiciendis aliquam repellendus! Cupiditate atque dolore at?
+    Autem eos, officia libero incidunt, officiis dignissimos, excepturi alias ducimus consectetur accusantium rerum ea blanditiis placeat odio totam vel laboriosam asperiores eius. Recusandae illum odit nostrum ipsa provident, hic qui?
+    Dolores voluptatem exercitationem dolore perferendis, eos rem, libero, ipsa officia porro distinctio debitis. Id nemo accusantium, maxime eligendi consequuntur dicta, nisi eum laboriosam, quasi labore necessitatibus unde tenetur. Impedit, est!
+    Impedit molestiae veritatis reprehenderit et adipisci quidem tenetur velit nulla, ipsa numquam ipsum. Maiores neque beatae ipsam, reprehenderit minus doloribus possimus architecto deleniti aspernatur iste ex. Consequuntur, porro. Quaerat, deleniti?
+    Dolores dignissimos quae nulla recusandae quos temporibus eos reiciendis accusantium iure molestias ex, dolore molestiae corporis repellendus repudiandae nisi eaque delectus. Veniam aliquam dicta quaerat necessitatibus at! Inventore, fugit molestias!</p> -->
+    <!--text-decoration - underline,overllline,line-through-->
+    <!--By default anchor tag has underline we can remove that by using text-decoration : none;-->
+    <!--font weight - How much light/dark text to be(normal,bold,bolder(400 above),lighter(400 below),100-900)-->
+    <!--font family - font style and priority goes from left to right when not available in Browser we are using-->
+    <!--Font family 2 types - Generic(5 - serif,sans-serif,cursive(handwriting like),monospace,etc and can have many font families in each),Specific(5)-->
+    <!--Units for size pixels - font weight(absolute - cm,inch,pixels(more used , 96 pixels = 1 inch = 2.54cm),relative)-->
+    <!--id names should not be vague.-->
+    <!--line-height - space between lines (individual line height)-->
+    <!--text-transform  (uppercase,lowercase,capitalize,none)-->
+    <!--Any Content(p,h,div,etc.,.) visualize as it is in a box. That content has height,width,and space b/w content and border of box - padding,space b/w to boxes - margin.-->
+    <!-- <h1>Headingone</h1>
+    <div id = "outer">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic consectetur voluptatibus velit quos nulla at sequi qui autem non consequuntur officiis sapiente, accusantium, necessitatibus, cupiditate similique soluta! Consectetur, voluptatem optio.</p>
+        <div id="inner">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni doloremque commodi officia id voluptatem dolore quam eius iste adipisci reprehenderit temporibus sapiente quo ut distinctio corporis fugiat, nulla fugit voluptatum.</p>
+        </div>
+    </div> -->
+    <!--Text Align within that box-->
+    <!--border shorthand - size style color-->
+    <!--Border - round the Corners of an Element's outer border edge.-->
+    <!--Border radius either in Pixels or in Percentage(50% gives a Circle).-->
+    <!-- <h1>Apna College</h1>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quam animi hic, molestias dicta tempore similique perspiciatis impedit nihil ullam, illum eaque voluptas voluptatem fugit ducimus velit accusamus. Ut, mollitia!</div> -->
+    <!--Padding Space b/w border and Content-->
+    <!--Padding,Margin Shorthand - Clockwise-->
+    <!--Display (inline(Required space+no margin,no padding),block(Complete Available Space),inline-block(inline+margin,padding),none)-->
+    <!--Margin - Space b/w Boxes.-->
+    <!--Display - none , here we remove element and space , Visibility - hidden , here we remove only element and space is reserved.-->
+<!--Alpha Channel - rgba alpha - Decides Opacity(0-1)(color visibility)(0-not visible,1 - visible completely
+    )-->
+
+
+    <!-- <div>Div1</div>
+    <div>Div2</div>
+    <div>Div3</div> -->
+    <!-- <div class="traffic">
+    <div id="div1" class="light">
+        Div
+    </div>
+    <div id="div2" class="light">
+        Div
+    </div>
+    <div id="div3" class="light">
+        Div1
+    </div>
+</div> -->
+<!-- <div id="nav">
+    <a id="logo">Amazon.in</a>
+    <a href="#">Account</a>
+    <a href="#">My Cart</a>
+    <a href="#">Contact Us</a>
+  
+        <input placeholder="Search Amazon.in">
+        <button>Search</button>
+</div> -->
+<!--Units - absolute(cm,inch,pixels(most used)),relative(%,em,rem)-->
+<!--% - size as relative to an element's parent object.-->
+<!--Amazon-->
+<!-- <header>
+    <div id="nav">
+        <a id="logo">Amazon.in</a>
+        <a href="#">Account</a>
+        <a href="#">My Cart</a>
+        <a href="#">Contact Us</a>
+      
+            <input placeholder="Search Amazon.in">
+            <button style="color:white">Search</button></div>
+</header>
+<br>
+<br>
+<div id="content">
+    <div class="contentBox" style="background-color: rgba(255,0,0,0.5);"></div>
+    <div class="contentBox" style="background-color: rgba(0,255,0.5);"></div>
+    <div class="contentBox" style="background-color: rgba(0,0,255,0.5);"></div>
+</div>
+<footer>
+    &#169 ;1996-2023,Amazon.com,Inc. or its affiliates
+</footer> -->
+<!--em - Based on font size things change based on parents(can have in fractions),in width things change based on its font-size.-->
+<!--(Rem - Root em) - Change based on root (body)-->
+<!--vh - relative to view port height(browser) , vw - relative to viewport width-->
+<!--Position - sets how an element is positioned in a Document(static(default(top,right,left,z-index according to Document no effect)),relative(relative to itself it shifts according to given values of top/bottom/right/left(Can OVERLAP elements using this)-Removed from flow),absolute(Removed from Document flow and Positioned relative to its closest Ancestor(parent,parent's parent,etc.,.-nonstatic should be)),fixed(relative to Browser(eg - top:0) and remain there even when we scroll)),sticky.-->
+<!--sticky - Positioned based on user's scroll position.(Can make it fixed when its positio is reached(top:0 for box3 in block 3 ))-->
+<!--z-index - stack level of elements(when overlap which comes above or below,default which written first will be on top when overlapped.Can Control this using z-index(+ve on top,-ve to bottom))-->
+<!--Background-image,background-size(cover(image completely fills),contain(),auto(default)),background-repeat)-->
+<!--Flex Box(Flexible box Layput) - 1D Layout method for arranging items in rows and columns.-->
+<!--Flex model -For container(div,navbar,span,section) assign dispaly:flex,then it becomes flex container,horizontal(main),vertical(cross) and can change horizontal (cross) , vertical(main)-->
+<!--Flex Direction (It sets how flex items are placed in the container,along which axis and direction)- row(default),row-reverse,column,column-reverse-->
+<!--mainaxis - row - left to right,row-reverse-right to left-->
+<!--flex items try to adjust to fit in Container until font-size allow-->
+<!--Column -main axis top to bottom-->
+<!--Flex properties - justify-content(if in row ,then at what place in that row it shifts(start,end,center,space-around when extra space there)),space between(space only b/w boxes adjusted),space-evenly(same amount of space).),align-items,align-content,flex-wrap-->
+<!--start and end space is half the space b/w the boxes in space-around-->
+<!--align-content - aligns space b/w and around content in cross axis-->
+<!--wrap - for multiple lines(here we use align-content),align-items - along cross axis.-->
+<!--Flex properties on flex items - align-self(alignment of individual along the cross axis)(Highest Priority),flex-grow(how much flex items will grow relative to the rest of the flex items if space is available with factor of 1 equally),flex-shrink(how much flex items will shrink relative to the rest of the flex items if space is available with factor of 1 equally))-->
+<!--Want to Shrink faster or slower compared to other boxes.-->
+<!--Media Queries - Help to create responsive website.-->
+<!-- <h1>Flexbox Playground</h1>
+<div id="container">
+    <div id="box1">Box1</div>
+    <div id="box2">Box2</div>
+    <div id="box3">Box3</div>
+    <div id="box4">Box4</div>
+</div>
+<div class="navbar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Help</a></li>
+        </ul>
+</div> -->
+<div class="loader">
+</div>
+
+</body>
+</html>
